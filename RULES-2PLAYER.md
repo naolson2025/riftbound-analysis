@@ -2,7 +2,16 @@
 
 **Source:** https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/e9ac8e3d33e0f78cef296f5945aba7bc1313b086.pdf  
 **Original:** *Riftbound Core Rules* — Last Updated 2026-07-16 — 120 pages, RUP4 Staging  
+**Cross-checked against:** [How to Play — Quick Start Guide](https://playriftbound.com/en-us/news/rules-and-releases/how-to-play-get-started/) (official, 2025-06-06)  
 **This file:** Compressed summary filtered to **2-player** (`1v1 Duel` & `1v1 Match`). Ignores `FFA3`, `FFA4`, `2v2 Magma Chamber` and team rules except where noted as excluded.
+
+> **Corrections log (from quick-start cross-check):**
+> 1. **§5 rewritten** — the rune payment mechanic (exhaust → Energy, recycle → Power) was missing entirely. This is the single most important rule for deckbuilding.
+> 2. **§4 Channel Phase** — channelling puts runes in your base ready; it does *not* add to the Rune Pool.
+> 3. **§8 Standard Move** — previously read "to a battlefield you control", which contradicted §4 and §9 and made attacking impossible. You may move from base to *any* battlefield.
+> 4. **§11 Recycle / Add / Channel** — clarified that recycling a rune returns it to the Rune Deck.
+>
+> Further official sources not yet folded in: *Unleashed Core Rules Patch Notes* (2026-03-30), *Unleashed Rules FAQ* (2026-04-29), *Unleashed Errata* (2026-04-03), *Spiritforged FAQ/Errata* (2026-01-14). The 2026-07-16 PDF postdates all of these, so they should already be incorporated.
 
 > Rule numbers in parentheses reference the original PDF (e.g., 054.1).
 
@@ -27,7 +36,7 @@ A **deck** for 2-player = Champion Legend + Main Deck + Rune Deck + 3 Battlefiel
   * **Chosen Champion:** 1 champion unit whose tag matches Legend’s tag (e.g., *Loose Cannon* → tag Jinx → any Jinx champion unit). Placed in Champion Zone at start. Signature units (e.g., Tibbers) *cannot* be Chosen Champion.
   * Other units / gear / spells. Max 3 copies per name (different names count separately even if same character). Max **3 Signature** cards total, all must share Legend’s champion tag. Format legality applies.
 * **Rune Deck (103.3):** 12 Rune cards, must match Domain Identity, shuffled separately.
-* **Battlefields (103.4):** Provide **3**, include in deck. In 2-player modes only **1** is used per game (see Setup). Cannot have duplicates if multiple required.
+* **Battlefields (103.4):** Provide **3**, include in deck. In 2-player modes only **1** of your 3 is used per game (see Setup), so **2 battlefields are in play total** — one contributed by each player. Cannot have duplicates if multiple required. *(The official quick-start says "each player brings a battlefield", which is the same end state simplified — the 3-then-select-1 step is the constructed/tournament procedure.)*
 
 ---
 
@@ -89,7 +98,7 @@ Play cycles turn by turn until win. Turn = **Start of Turn → Main Phase → En
 2. **Beginning Phase (315.2):** 
    * “At start of Beginning Phase” triggers fire.
    * **Hold:** Turn Player scores **1 point per battlefield they control** (once per battlefield per turn). Hold triggers queue. *Team mode exclusion ignored for 2-player (no teammate disqualification).*
-3. **Channel Phase (315.3):** Channel **2 runes** from Rune Deck (flip top 2 face-up to base, adding Energy/Power to Rune Pool). Second player on first turn channels 3 total (2+1 extra).
+3. **Channel Phase (315.3):** Channel **2 runes** from Rune Deck (move top 2 face-up to your base, **ready**). Channelling does *not* itself add anything to your Rune Pool — you generate Energy/Power later by exhausting or recycling those runes to pay costs (see §5.1). Second player on first turn channels 3 total (2+1 extra).
 4. **Draw Phase (315.4):** Draw 1. If Main Deck empty, **Burn Out** (431): recycle trash → deck (shuffled), opponent gains 1 point, then still draw 1. Repeated burn outs if still empty: each gives opponent 1 point that *cannot be replaced/prevented* and can win game.
 
 ### Main Phase (316) — The bulk of play:
@@ -108,16 +117,41 @@ Cleanups (318) handle state checks: winning check (≥ Victory Score and most po
 
 ## 5. Resources — Runes & Costs (160–167, 201–206, 430)
 
-* **Runes:** Produce Energy (generic) and Power (domain-colored). 6 domains: Fury, Calm, Body, Mind, Chaos, Order + Colorless/A (any).
-* **Rune Pool:** Conceptual pool. Empties at start of each Main Phase and end of each turn. Abilities with “Add [X]” add to pool.
-* **Costs:** Printed cost is base; paying is mandatory to get effect. Additional/Replacement costs (Accelerate, Repeat, Deflect) apply during playing. Effects checking cost use printed/copied cost, not amount paid. Some texts “you may pay [X] as you play me” are Optional Additional Costs (e.g., Accelerate = pay [1][C] to enter ready).
+* **Runes:** Resource cards from a separate 12-card Rune Deck. 6 domains: Fury, Calm, Body, Mind, Chaos, Order + Colorless/A (any). Channelled runes sit **ready in your base**; channelling by itself does *not* put anything in your Rune Pool.
+* **Rune Pool:** Conceptual pool holding Energy and Power you have generated. Empties at start of each Main Phase and end of each turn — unspent Energy/Power is lost.
+
+### 5.1 The Two Ways to Spend a Rune ⚠️ *(the core resource rule)*
+
+A rune in your base can be spent in **two different ways**, and this distinction drives all deckbuilding:
+
+| Spend | Action | Produces | Cost to you |
+|---|---|---|---|
+| **Exhaust** | Turn the rune sideways | **1 Energy** (generic) | **Temporary** — rune stays in your base and readies in your next Awaken Phase |
+| **Recycle** | Return the rune to your Rune Deck | **1 Power** of that rune's domain | **Permanent** — rune leaves your base entirely (it will be re-channelled later) |
+
+* **A cost is written as an Energy number plus zero or more Power symbols**, e.g. `[5][Calm]` or `[6][Calm][Calm]`. **Both parts must be paid**: the Energy by exhausting runes, the Power by recycling runes of that domain.
+* **An already-exhausted rune can still be recycled.** So the runes you recycle for Power may be the same ones you exhausted for Energy. Runes you need to *have* in base = **max(Energy, Power)**, which is the Energy number for virtually every card.
+* **Colorless/rainbow Power `[A]`** may be paid by recycling a rune of any domain.
+* **Consequence — Energy is rent, Power is attrition:**
+  ```
+  net rune growth per turn = +2 (Channel Phase) − (Power symbols you spent)
+  ```
+  Spend 3+ Power symbols in a turn and your base *shrinks*. This is why the maximum printed Energy cost in the game is **12** — the size of a Rune Deck, reachable only if you have never paid a Power cost.
+* **“Add [X]” abilities** (Seals, Ancient Henge, legend abilities, Gold tokens) put Energy or Power straight into the Rune Pool **without exhausting or recycling a rune**, so they sidestep attrition entirely. Abilities that add resources can't be reacted to.
+* **Readying runes** (Sona, Targon's Peak, “ready 2 runes”) lets you exhaust them again for more Energy in the same turn. It does **not** return recycled runes — readying fixes Energy, never attrition.
+* **Channel N runes exhausted:** the rune enters your base already sideways, so it produces nothing until your next Awaken Phase.
+
+### 5.2 Cost Rules
+
+* **Costs:** Printed cost is base; paying is mandatory to get effect. Additional/Replacement costs (Accelerate, Repeat, Deflect) apply during playing. Effects checking cost use printed/copied cost, not amount paid. Some texts “you may pay [X] as you play me” are Optional Additional Costs (e.g., Accelerate = pay [1][A] to enter ready).
+* **Deflect X** and **Hidden** costs are Power costs — they make the payer *recycle* runes, so they are a lasting attack on the opponent's rune base, not just a one-turn tax.
 
 ---
 
 ## 6. Playing Cards & Abilities (349–360, 376–400)
 
 * **Playable types:**
-  * **Units:** Play to your base or battlefield you control (or via Ambush/Ganking permissions) — enter **exhausted** unless Accelerate/ready effect. Have Might (power), Energy cost, Domains.
+  * **Units:** Play to your base or battlefield you control (or via Ambush/Ganking permissions) — enter **exhausted** unless Accelerate/ready effect. Have **Might** (combat strength — *not* the same thing as rune Power), a cost (Energy + Power symbols), and Domains.
   * **Gear:** Play to base only (except Hidden at that battlefield). May have Equipment tag + Equip ability.
   * **Spells:** Play during Open State on your turn (or Showdown if Action/Reaction). Resolve effect then go to Trash; if countered/ignored may be banished.
   * **Legends/Battlefields:** Not played like cards; legends static in Legend Zone, battlefields placed at setup.
@@ -148,7 +182,7 @@ Cleanups (318) handle state checks: winning check (≥ Victory Score and most po
 
 ## 8. Movement & Control (420–455, 188–190)
 
-* **Standard Move (144, 445–452):** As discretionary action on your turn, you may move your units from base to a battlefield you control, or between controlled battlefields if has **Ganking**.
+* **Standard Move (144, 445–452):** As discretionary action on your turn, you may move your units **from your base to any battlefield** — including one that is uncontrolled or controlled by an opponent. That is how you attack: moving into a battlefield you don't control makes it **Contested** (→ Showdown, and Combat if enemy units are there). Moving **battlefield → battlefield** requires **Ganking**.
 * **Move via spells/abilities:** May target any legal destination; if moving to uncontrolled battlefield, it becomes Contested → cleanup → Showdown/Combat. After move, perform Cleanup.
 * **Recall (454):** Move to base without being a Move (doesn’t trigger move effects, no contesting).
 * **Control (188–190):** You control permanents you played/tokens you created; battlefields while you have units there *and* opponent has none. Uncontrolled battlefields’ abilities are controlled by Turn Player if needed.
@@ -186,7 +220,7 @@ Units exhaust when they attack/defend unless otherwise readied.
 ## 11. Other Core Actions (413–443 summarized)
 
 * **Draw:** Private from Main Deck; burn out if empty.
-* **Recycle:** Chosen cards from Trash → shuffled into Main Deck.
+* **Recycle:** Return a card to the bottom/shuffle of the deck it belongs to. Main Deck cards recycle from Trash → Main Deck. **A recycled *rune* goes back to your Rune Deck and leaves your base** — this is how Power costs are paid (§5.1), so “recycle” is both a cost and an effect depending on context.
 * **Exhaust/Ready (414–415):** Tap/untap; units enter exhausted; awaken readies.
 * **Discard (422), Discard?** Choose from hand → trash.
 * **Kill (428):** Permanent to Trash (if replaced by recall, death triggers don’t fire).
@@ -194,7 +228,7 @@ Units exhaust when they attack/defend unless otherwise readied.
 * **Buff/Debuff (426):** Temporary Might changes via layers.
 * **Stun (423):** Unit doesn’t deal combat damage this turn.
 * **Counter (425):** Spell on chain → banished instead of resolving.
-* **Add/Channel (429–430):** Add resources; Channel = flip 2 runes.
+* **Add/Channel (429–430):** **Add** = put Energy/Power directly into your Rune Pool without exhausting or recycling a rune. **Channel** = move runes from Rune Deck to your base (ready, unless the effect says “exhausted”).
 * **Predict (436):** Look at top of Main Deck, may recycle it.
 * **Empower (441–442):** Legend/permanent gains Empowered status if not already; Empowered abilities become active.
 
@@ -204,7 +238,7 @@ Units exhaust when they attack/defend unless otherwise readied.
 
 | Keyword | Type | Quick Effect |
 |---------|------|--------------|
-| **Accelerate** | Optional Cost | Pay [1][C] as you play unit → enters ready |
+| **Accelerate** | Optional Cost | Pay [1] + 1 Power **of my own domain** (verified across all 6 domains) as you play me → I enter ready. Note the Power half recycles a rune. |
 | **Action** `[Action]` | Permissive | Playable during Showdowns on any turn (any player) |
 | **Reaction** `[Reaction]` | Permissive | Action + playable during Closed States (chain/combat) |
 | **Assault X** | Passive | +X Might while attacker |
