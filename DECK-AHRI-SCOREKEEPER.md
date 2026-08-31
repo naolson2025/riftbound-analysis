@@ -1,6 +1,6 @@
 # FOXHOLE — Nine-Tailed Fox Calm/Mind Scorekeeper Control
 
-**Format:** 2-Player Duel / Match (Victory Score 8, 2 battlefields)
+**Format:** 2-Player Duel / Match (Victory Score 8, 2 battlefields) — tournament-legal constructed: 40 Main Deck, 8 sideboard, 12 runes, 3 battlefields
 **Legend:** Nine-Tailed Fox (Ahri) — Calm / Mind
 **Chosen Champion:** Ahri, Alluring
 **Archetype:** Defensive board-control that scores *more points per battlefield than is normally possible* while denying the opponent the ability to score at all.
@@ -33,7 +33,7 @@ Two consequences drive every card choice below:
 1. **A zero-power card is dramatically better than its energy cost suggests.** `Falling Comet [5]` costs five *rentals*. `Charm [1][Calm]` costs one rental plus one rune you never get back — in real terms Charm is the more expensive card.
 2. **Double-power cards are big commitments,** and you can only afford a couple of them across a game. This deck plays exactly two names with `[C][C]` costs, and both of them win the game on their own.
 
-The build below runs **0.60 power symbols per card, half the deck at zero power, and two Seal of Focus that generate Calm Power for free every turn.** Against +2 channelled per turn, that keeps net rune growth comfortably positive while still casting a 7-drop.
+The build below runs **0.63 power symbols per card, just under half the deck at zero power, and two Seal of Focus that generate Calm Power for free every turn.** Against +2 channelled per turn, that keeps net rune growth comfortably positive while still casting a 7-drop.
 
 ---
 
@@ -121,11 +121,13 @@ BATTLEFIELD  Hallowed Tomb              "When you hold here, you may return your
 
 Blue Sentinel doubles all three: **Grove draws 2, Startipped Peak channels 2.** Startipped Peak is specifically here to fight rune attrition — two extra runes per turn on top of your Channel Phase is what pays for Tianna and Alpha Wildclaw.
 
-### Main Deck — 42 cards
+### Main Deck — exactly 40 cards
+
+Tournament rule **402.1 / 601.1.b** requires a Main Deck of *exactly* 40, not "at least" 40. The Chosen Champion counts toward the 40 even though it starts in the Champion Zone.
 
 `[E]` = runes to exhaust. `[C]`/`[M]` = Calm/Mind runes to **recycle** (gone from your base).
 
-**Units — 22**
+**Units — 20**
 
 | # | Card | Cost | Pwr | Might | Role |
 |---|---|---|---|---|---|
@@ -133,7 +135,6 @@ Blue Sentinel doubles all three: **Grove draws 2, Startipped Peak channels 2.** 
 | 3 | **Blue Sentinel** | `[4][M]` | 1 | 4 | Doubles Ahri and both battlefields. Shield 2 = 6-Might defender. |
 | 3 | **Mutated Mouser** | `[2]` | **0** | 1 | Shield 2 + Tank. Defends as 3 and must be killed first. |
 | 3 | **Sunlit Guardian** | `[3]` | **0** | 3 | Shield + Tank. Defends as 4. Your standard battlefield claim. |
-| 2 | **Lecturing Yordle** | `[3]` | **0** | 2 | Tank that replaces itself — draw 1 on play. |
 | 2 | **Taric, Protector** | `[4][C]` | 1 | 4 | Shield + Tank, and grants Shield to everything else there. |
 | 2 | **Sona, Harmonious** | `[4][C]` | 1 | 4 | **Readies 4 runes at end of your turn.** Your mana engine. |
 | 2 | **Alpha Wildclaw** | `[6][C][C]` | 2 | 7 | Tank. Makes Ahri, Tianna and Blue Sentinel untargetable. |
@@ -152,11 +153,13 @@ Blue Sentinel doubles all three: **Grove draws 2, Startipped Peak channels 2.** 
 | 2 | **Crescent Strike** | `[3][M]` | 1 | Action. 4 damage to one enemy, 1 to every other enemy there. |
 | 2 | **Block** | `[2]` | **0** | Hidden, Action. Give a unit Shield 3 **and** Tank this turn. |
 
-**Totals: 25 power symbols across 42 cards (0.60/card). 21 cards at zero power (50%).**
+**Totals: 20 units + 20 spells/gear = 40. 25 power symbols (0.63/card), 20 Calm and 5 Mind. 19 cards at zero power (48%).**
+
+The two cards cut to reach exactly 40 were **Lecturing Yordle ×2**. It was the weakest card in the deck — a 2-Might body is below the curve for `[3]`, and its "draw 1" is redundant with Consult the Past and Grove of the God-Willow. It moves to the sideboard, where it is a fine anti-aggro Tank. Nothing in the engine changed.
 
 Note the raw symbol count went *up* by 2 when the Seals came in, because a Seal costs a Calm Power to deploy. That is the correct trade and the raw number is misleading: those 2 symbols are one-time payments that then refund themselves every turn for the rest of the game. Judge the deck on **net rune flow**, not on the printed total.
 
-> **Why Seal of Focus is the best card the corrected rules unlocked.** It costs `[0]` Energy plus one recycled Calm rune — so you pay exactly one rune, once. From then on it taps every turn to **Add `[Calm]` directly to your Rune Pool without exhausting or recycling anything.** It breaks even on its second turn in play and is pure profit forever after. This deck spends 18 Calm Power symbols across a full playset; two Seals cover roughly one to two of them *every turn*, which takes net rune growth from about +0.5/turn to roughly +1.7/turn. That is the difference between casting Tianna Crownguard on turn 5 and never casting her. It also means the Power half of Not So Fast is free on the opponent's turn, so you can hold up interaction without tapping low.
+> **Why Seal of Focus is the best card the corrected rules unlocked.** It costs `[0]` Energy plus one recycled Calm rune — so you pay exactly one rune, once. From then on it taps every turn to **Add `[Calm]` directly to your Rune Pool without exhausting or recycling anything.** It breaks even on its second turn in play and is pure profit forever after. This deck spends 20 Calm Power symbols across a full playset; two Seals cover roughly one to two of them *every turn*, which takes net rune growth from about +0.5/turn to roughly +1.7/turn. That is the difference between casting Tianna Crownguard on turn 5 and never casting her. It also means the Power half of Not So Fast is free on the opponent's turn, so you can hold up interaction without tapping low.
 
 **Rune Deck — 12**
 
@@ -165,17 +168,34 @@ Note the raw symbol count went *up* by 2 when the Seals came in, because a Seal 
 4 × Mind Rune
 ```
 
-The deck spends 18 Calm symbols to 5 Mind across a full playset, so the split is deliberately Calm-heavy. Mind is only ever needed one symbol at a time (Blue Sentinel, Crescent Strike), and with 4 Mind in 12 you have a ~97% chance of having channelled at least one by your third turn. Calm needs *doubles* for Alpha Wildclaw and Tianna, which is why it gets 8. Recycled runes return to the Rune Deck and get re-channelled, so neither colour ever runs dry.
+The deck spends 20 Calm symbols to 5 Mind across a full playset, so the split is deliberately Calm-heavy. Mind is only ever needed one symbol at a time (Blue Sentinel, Crescent Strike), and with 4 Mind in 12 you have a ~97% chance of having channelled at least one by your third turn. Calm needs *doubles* for Alpha Wildclaw and Tianna, which is why it gets 8. Recycled runes return to the Rune Deck and get re-channelled, so neither colour ever runs dry.
 
-### Legality check
+### Sideboard — 8 cards
 
-- ✅ 42 cards ≥ 40 minimum
+Constructed competitions allow a sideboard of **8 or fewer** cards (601.1.c.1), all of which must be legal Main Deck cards, and the 3-copy limit applies across Main Deck **and** sideboard combined (601.1.c.3). Swaps are strictly **1-for-1**, so the Main Deck stays at exactly 40 after boarding (403.4, 403.4.c).
+
+| # | Card | Cost | Pwr | Bring in for |
+|---|---|---|---|---|
+| 2 | **Lecturing Yordle** | `[3]` | **0** | Aggro. A third pair of zero-power Tank bodies for turns 1–3. |
+| 2 | **Meditation** | `[2]` | **0** | Control mirrors. Zero-attrition draw at Reaction speed. |
+| 2 | **Rune Prison** | `[2][C]` | 1 | Turtling decks. Thwonk! only stuns *attackers*; this stuns on your turn. |
+| 1 | **Seal of Focus** (3rd) | `[0][C]` | 1 | Grindy games you expect to run past turn 8. |
+| 1 | **Mageseeker Warden** | `[6][C]` | 1 | Ambush and Reaction-unit decks — they can only play units to their base. |
+
+Copy-limit check: Seal of Focus is 2 main + 1 sideboard = 3, at the cap. Everything else is well under.
+
+**A trick worth knowing (601.1.c.4):** between games you may swap your **Chosen Champion** for any Champion in your Main Deck or sideboard that matches your Legend. With three Ahri, Alluring in the 40 this rarely comes up, but if the opponent shows you a removal-dense game 1, you can board a cheaper Ahri-tagged Champion into the Champion Zone so your guaranteed turn-1-available body is one they must answer earlier.
+
+### Legality check — tournament constructed
+
+- ✅ Main Deck is **exactly 40** cards including the Chosen Champion (402.1, 601.1.b)
+- ✅ Sideboard is 8 cards, all legal Main Deck cards (601.1.c.1–2)
+- ✅ Exactly 1 Legend, **exactly 12 runes**, **exactly 3 battlefields with unique names** (402.1)
 - ✅ Chosen Champion is Ahri, Alluring — Champion unit, tag **Ahri**, matches the legend, not a Signature card
 - ✅ 3 Signature cards total (Fox-Fire ×3), all tagged **Ahri**
 - ✅ Every card is mono-Calm, mono-Mind, or Calm/Mind — inside the Domain Identity
-- ✅ Max 3 copies of any name
-- ✅ 12 runes, all matching the Domain Identity
-- ✅ 3 distinct battlefields, no duplicates
+- ✅ Max 3 copies of any name across Main Deck **plus** sideboard (403.3, 601.1.c.3)
+- ⚠️ **Set legality needs a date check.** The deck draws on OGN, SFD and UNL. The January tournament update enumerates Standard as OGS + OGN + SFD only (601.3.c), which would make **Blue Sentinel, Mutated Mouser, Alpha Wildclaw and Crescent Strike** illegal — and Blue Sentinel is a core engine piece. That enumeration is a January snapshot taken before Unleashed released; the governing definition (601.3.a–b, "the current year's sets plus the previous year's sets") does include UNL and VEN now. Confirm against the current format announcement before registering, and check the live banned list (601.2.d).
 
 ---
 
@@ -212,7 +232,7 @@ Against real resistance this is a turn 6–7 kill, and from the moment Tianna la
 This is the skill the deck actually rewards.
 
 - **Budget power symbols, not energy.** Before your turn, count the power symbols in what you plan to cast. Two is a normal turn. Three means you end the turn poorer than you started. Four means you have set yourself back two full turns of channelling.
-- **Sona, Harmonious is a mana engine, not a body.** Readying 4 runes at end of turn means those 4 are available again during the opponent's turn for Not So Fast, Meditation and Hidden cards, and then they ready *again* in your Awaken Phase. She effectively adds four energy per turn cycle. She does not replace recycled runes, so she fixes energy, not attrition — but energy is what you run out of first.
+- **Sona, Harmonious is a mana engine, not a body.** Readying 4 runes at end of turn means those 4 are available again during the opponent's turn for Not So Fast, Consult the Past and Hidden cards, and then they ready *again* in your Awaken Phase. She effectively adds four energy per turn cycle. She does not replace recycled runes, so she fixes energy, not attrition — but energy is what you run out of first.
 - **Startipped Peak, doubled by Blue Sentinel, is +2 runes per turn.** That is the only card in the deck that actually reverses attrition. If you get to choose battlefields (a Match), and the game looks like it will go long, take it.
 - **Hidden is a rune conversion, not free value.** Hiding costs `[rainbow]` — one recycled rune — and then the card plays for `[0]`. So hiding Consult the Past turns one rune into "draw 2 at Reaction speed on their turn." That is a fine trade, but it *is* a trade. You control up to 2 facedown zones (one per battlefield you hold), so cap yourself at the ones that matter: Fox-Fire and Block are the best hides because they win combats outright.
 - **Their Deflect and Hidden costs hurt them the same way.** Making an opponent pay `[rainbow]` to target Tianna costs them a rune permanently. Deflect in this economy is a mana attack, not just a tax.
@@ -223,7 +243,7 @@ You may set aside up to 2 cards and redraw. You want **a cheap zero-power body p
 
 | Keep | Set aside |
 |---|---|
-| Mutated Mouser, Sunlit Guardian, Lecturing Yordle | Hands with zero units |
+| Mutated Mouser, Sunlit Guardian, Seal of Focus | Hands with zero units |
 | Blue Sentinel | Second and third copies of Ahri, Alluring |
 | One cheap interaction card (Thwonk!, Not So Fast) | Alpha Wildclaw + Tianna together — far too slow to keep both |
 | Ahri is in your Champion Zone — never mulligan for her | Any hand needing 3+ power symbols before turn 4 |
@@ -285,28 +305,36 @@ You do not need to win it, only to **deny** it. Every turn they hold it is 1 poi
 
 ## 5. Flex Slots
 
-| Card | Cost | Pwr | Bring in for |
-|---|---|---|---|
-| **Meditation** | `[2]` | **0** | Extra card draw at zero attrition — Reaction, draw 1, or exhaust a friendly unit to draw 2. |
-| **Seal of Focus (3rd copy)** | `[0][C]` | 1 | If you keep getting stranded on Power. Three is greedy in a board game, but it is defensible. |
-| **Charm** | `[1][C]` | 1 | Breaking a hold on the second battlefield. Cheap in energy, but remember it costs a rune outright. |
-| **Rune Prison** | `[2][C]` | 1 | If you need to stun on *your* turn (Thwonk! only hits attackers). |
-| **Zhonya's Hourglass** | `[2]` | **0** | Targeted-removal fields. Zero power, Hidden, redirects a kill onto itself. |
-| **Find Your Center** | `[3]` | **0** | Costs `[1]` when they're at 5+ points. Draw 1 *and* channel a rune — pure economy repair. |
-| **Navori Scout** | `[4]` | **0** | A 4-Might Deflect body for zero attrition when you want more raw board. |
-| **Mageseeker Warden** | `[6][C]` | 1 | Ambush and Reaction-unit decks. Opponents can only play units to their base. |
-| **Wind Wall** | `[3][C][C]` | 2 | Only if you're actually losing to sweepers. Two recycled runes for one counter is a steep price. |
+Because the Main Deck is locked at exactly 40, every addition here is a **1-for-1 swap**, not an extra card. The eight best of these are already in the sideboard above; the rest are alternatives to consider when you build, since a registered decklist can never be changed afterwards (401.3).
 
-Cards I deliberately **cut** on cost-model grounds: **Premonition** `[2][M][M][M]` (three recycled runes for three cards is a losing trade), **Janna, Savior** (great effect, but a third `[C]` card in a Calm-saturated curve), and **Wind Wall** as a maindeck slot.
+| Card | Cost | Pwr | Bring in for | Cut |
+|---|---|---|---|---|
+| **Meditation** | `[2]` | **0** | Extra card draw at zero attrition — Reaction, draw 1, or exhaust a friendly unit to draw 2. | Crescent Strike |
+| **Seal of Focus (3rd copy)** | `[0][C]` | 1 | If you keep getting stranded on Power. Three is greedy in a board deck, but defensible. | Block |
+| **Rune Prison** | `[2][C]` | 1 | Stunning on *your* turn (Thwonk! only hits attackers). | Crescent Strike |
+| **Mageseeker Warden** | `[6][C]` | 1 | Ambush and Reaction-unit decks. Opponents can only play units to their base. | Falling Comet |
+| **Charm** | `[1][C]` | 1 | Breaking a hold on the second battlefield. Cheap in energy, but it costs a rune outright. | Block |
+| **Zhonya's Hourglass** | `[2]` | **0** | Targeted-removal fields. Zero power, Hidden, redirects a kill onto itself. | Block |
+| **Find Your Center** | `[3]` | **0** | Costs `[1]` when they're at 5+ points. Draw 1 *and* channel a rune — pure economy repair. | Consult the Past |
+| **Navori Scout** | `[4]` | **0** | A 4-Might Deflect body for zero attrition when you want more raw board. | Taric |
+| **Wind Wall** | `[3][C][C]` | 2 | Only if you're actually losing to sweepers. Two recycled runes for one counter is steep. | Not So Fast |
 
-**Battlefield swaps for a Match (Bo3),** where you choose rather than randomise:
+Cards deliberately **cut** on cost-model grounds: **Premonition** `[2][M][M][M]` (three recycled runes for three cards is a losing trade), **Janna, Savior** (great effect, but a third `[C]` card in a Calm-saturated curve), and **Wind Wall** as a maindeck slot.
 
-- **Fortified Position** — "when you defend here, a unit gains Shield 2 this combat." Bring in against the fastest aggro starts.
-- **Aspirant's Climb** — Victory Score becomes 9. Bring in against decks racing you; an extra point costs them a full turn and costs you about a third of one.
-- **Forgotten Monument** — nobody scores here until their third turn. Pure anti-aggro.
+### Battlefields are locked — choose your three at registration
+
+**You may not change your Legend, Rune Deck or Battlefields at any point after registration (403.4.b).** Only Main Deck cards and the Chosen Champion can be boarded. So the three battlefields above are a build-time decision, and the in-match lever is only *which of your registered three you present each game*.
+
+In a Bo3 you choose rather than randomise, and a battlefield used in a game somebody won is removed for the rest of the match — so plan the order, not the contents:
+
+- **Game 1 — Startipped Peak.** You don't know the matchup, and +2 runes a turn with Blue Sentinel is good against everything.
+- **Vs. aggro — Grove of the God-Willow.** Doubled draw refills on walls faster than they can remove them.
+- **Vs. removal or control — Hallowed Tomb.** Recurring Ahri makes killing her close to pointless, which is exactly the game those decks are trying to play.
+
+If you would rather register a different three, the strongest alternatives are **Fortified Position** (Shield 2 when you defend — best vs. the fastest starts), **Aspirant's Climb** (Victory Score becomes 9, which costs a racing opponent a full turn and costs you about a third of one), and **Forgotten Monument** (nobody scores here until their third turn — pure anti-aggro). Trading Startipped Peak for one of these gives up the rune engine, so only do it if you expect a field of turn-4 kills.
 
 ---
 
 ## 6. One-Paragraph Summary
 
-Riftbound is decided by a scoreboard with a hard ceiling of 2 points per turn, and this is the only configuration in the pool that raises its own ceiling to 4 while lowering the opponent's to 0. Ahri, Alluring turns every hold into a double score and starts in the Champion Zone so she is never a draw-step gamble; Blue Sentinel triples it and doubles both battlefield abilities; Tianna Crownguard freezes their counter outright; Alpha Wildclaw makes all three immune to targeted removal while soaking every point of combat damage as a 7-Might Tank. Just as importantly, it is built for the actual resource system: 55% of the deck costs zero power, so the board never eats your rune base, and the two point-scoring engine pieces cost one recycled rune each and then produce points forever. The opponent has to break a Tank-protected, spell-proof board with a shrinking army and a shrinking mana base, and if they fail even once, they lose by four points a turn.
+Riftbound is decided by a scoreboard with a hard ceiling of 2 points per turn, and this is the only configuration in the pool that raises its own ceiling to 4 while lowering the opponent's to 0. Ahri, Alluring turns every hold into a double score and starts in the Champion Zone so she is never a draw-step gamble; Blue Sentinel triples it and doubles both battlefield abilities; Tianna Crownguard freezes their counter outright; Alpha Wildclaw makes all three immune to targeted removal while soaking every point of combat damage as a 7-Might Tank. Just as importantly, it is built for the actual resource system: 48% of the deck costs zero power, so the board never eats your rune base, and the two point-scoring engine pieces cost one recycled rune each and then produce points forever. The opponent has to break a Tank-protected, spell-proof board with a shrinking army and a shrinking mana base, and if they fail even once, they lose by four points a turn.
